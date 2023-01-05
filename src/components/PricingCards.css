@@ -1,0 +1,143 @@
+.pricing-upper-desc{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 16rem;
+    margin-bottom: 4rem;
+}
+.pricing-upper-desc .pricing-description{
+    
+    margin-top: 5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 2.3rem;
+}
+.pricing-upper-desc .pricing-description::after {
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 0.3rem;
+    background-color: goldenrod;
+    position: relative;
+    bottom: 4.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+   
+}
+.company-formation-details{
+    padding: 10px 40px;
+    color: rgb(96, 96, 252);
+    width: 30%;
+}
+.company-formation-details h2 {
+    letter-spacing: 1px;
+}
+.company-formation-details p {
+    font-size: 17px;
+}
+.company-formation-details ul{
+    padding: 0;
+}
+.company-formation-details ul li {
+    list-style-type:none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0.8rem 0;
+
+
+}
+.active-card {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+.active-card ul li img{
+    background-color: white;
+    border-radius: 50%;
+
+}
+.one-time-payment{
+    font-size: 16px;
+    font-weight: normal;
+    color: silver;
+}
+
+.btn-continue {
+    border: 2px solid blue;
+    background-color: white;
+    width: 100%;
+    cursor: pointer;
+    padding: 25px 0;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.images-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 4rem;
+    overflow: hidden;
+    position: relative;
+    bottom: 12rem;
+}
+
+.arc-right{
+   position: relative;
+   left: 20.2rem;
+
+}
+.elipse8{
+    position: relative;
+    top: 10rem;
+}
+.elipse9{
+    position: relative;
+    top: 15rem;
+}
+
+@media screen and (max-width: 768px) {
+    .pricing-upper-desc{
+        display: none;
+    }
+    .active-card {
+        background-color: blue;
+        color: white !important;
+        border-radius: 10px;
+    }
+    .active-card ul li img{
+        background-color: white;
+        border-radius: 50%;
+    
+    }
+    .pricing-details{
+        display: flex;
+       flex-direction: column;
+       width: 100% !important;
+       box-sizing: border-box;
+       overflow: hidden !important;
+       
+    }
+    
+    .one-time-payment{
+       display: none;
+    }
+   
+    .company-formation-details{
+        width: 90%;
+    }
+    .images-section {
+        display: none;
+    }
+}

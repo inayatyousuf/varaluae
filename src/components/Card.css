@@ -1,0 +1,28 @@
+.card-container {
+    width: 25%;
+    padding: 10px;
+}
+.card-container h3 {
+  
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.card-container p{
+
+ line-height: 1.5rem;
+ color: gray;
+}
+.card-container a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: goldenrod;
+}
+.card-container a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .card-container {
+        width: 100%;
+        text-align: center;
+    }
+}

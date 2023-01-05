@@ -1,0 +1,87 @@
+.mission-container {
+    overflow: hidden;
+    height: 30rem;
+}
+
+.mission-container .left-ellipse{
+    position: relative;
+    right:23%;
+}
+.mission-container .ellipse27{
+    position: relative;
+    bottom: 20rem;
+    right: 5rem;
+}
+.mission-content-container {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 23rem;
+    width: 50%;
+
+}
+.mission-content-container .mission-heading, .top-heading{
+    margin: 0;
+}
+.mission-content-container .top-heading::after{
+    content: '';
+    display: block;
+    height:6px;
+    width: 10rem;
+    background-color: goldenrod;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.mission-content-container .mission-description{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: silver;
+    letter-spacing: 1px;
+}
+
+.cards-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .balls-division {
+      padding: 20px 0;
+  }
+  .balls-division .first-ball{
+     position: relative;
+     bottom: 3rem;
+  }
+  .balls-division .second-ball{
+    position: relative;
+   left: 30%;
+ }
+@media screen and (max-width: 768px) {
+    .mission-container .left-ellipse{
+        display: none;
+    }
+    .mission-container .ellipse27{
+        position: relative;
+        bottom: 20rem;
+        right: 0rem;
+    }
+    .mission-content-container {
+       
+        bottom: 0rem;
+        width: 100%;
+    
+    }
+    .mission-container .ellipse27{
+        position: relative;
+        top: 22rem;
+       
+    }
+
+.cards-block{
+   flex-direction: column;
+  }
+}

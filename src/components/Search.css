@@ -1,0 +1,63 @@
+.search-container {
+    padding: 30px 0;
+    text-align: right;
+
+}
+.search-container input {
+    padding: 14px 4px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    /* text-align: center; */
+    width: 30%;
+    padding-left: 2.3rem;
+    
+}
+.search-container input::placeholder {
+    color: blue;
+    font-weight: bold;
+}
+input.search {
+     background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='blue' font-weight='bold' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+.ellipse-img16 {
+    position: relative;
+    top: 1rem;
+}
+.ellipse-img21 {
+    position: relative;
+    top: 8rem;
+    left: 16rem;
+}
+.ellipse-img8 {
+    position: relative;
+    left: 30rem;
+}
+.ellipse-img19 {
+    position: relative;
+    left:45rem;
+    top: 8rem;
+   
+}
+@media screen and (max-width: 768px) {
+    .search-container input {
+        width: 100%;
+    }
+    .ellipse-img16 {
+        display: none;
+    }
+    .ellipse-img21 {
+       display: none;
+    }
+    .ellipse-img8 {
+        position: relative;
+        left: 40%;
+    }
+    .ellipse-img19 {
+        position: relative;
+        left:60%;
+        top: 8rem;
+       
+    }
+}
+  
+
